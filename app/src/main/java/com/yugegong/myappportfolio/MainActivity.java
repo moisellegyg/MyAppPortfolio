@@ -1,11 +1,13 @@
 package com.yugegong.myappportfolio;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 
@@ -39,31 +41,9 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /** Called when the user touches the button */
-    public void startSpotify(View view) {
-        // Do something in response to button click
+    public void clickOnBtn(View view) {
+        Button btn = (Button)view;
+        Toast.makeText(getApplicationContext(), (CharSequence) String.format(getString(R.string.toast), btn.getText()), Toast.LENGTH_SHORT).show();
     }
 
-    public void startScores(View view) {
-
-    }
-
-    public void startLibrary(View view) {
-
-    }
-
-    public void startBigger(View view) {
-
-    }
-
-    public void startXYZ(View view) {
-
-    }
-
-    public void startCapstone(View view) {
-        Context context = getApplicationContext();
-        CharSequence text = "This button will launch my capstone app!";
-        int duration = Toast.LENGTH_SHORT;
-        Toast.makeText(context, text, duration).show();
-    }
 }
