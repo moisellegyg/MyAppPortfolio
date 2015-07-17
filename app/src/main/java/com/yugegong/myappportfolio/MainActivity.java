@@ -56,7 +56,7 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
-    public void startstartXYZ(View view) {
+    public void startXYZ(View view) {
 
     }
 
